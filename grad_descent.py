@@ -1,4 +1,3 @@
-from sklearn import datasets
 from numpy import *
 import matplotlib
 
@@ -33,13 +32,13 @@ def gradient_descent_runner(points, initial_b, initial_a, learning_rate, num_ite
     return [b, m]
 
 def run():
-    points = [[1, 1], [2, 2], [3, 3], [4, 4]]#genfromtxt('world.csv', delimiter=',')
+    points = [[1, 5], [2, 6], [3, 7], [4, 8]]#genfromtxt('world.csv', delimiter=',')
     # hyperparameters
     learning_rate = 0.0001
     # y = ax + b
     initial_a = 0
     initial_b = 0
-    num_iterations = 1000
+    num_iterations = 10000
     [b, m] = gradient_descent_runner(points, initial_b, initial_a, learning_rate, num_iterations)
     print(b)
     print(m)
