@@ -1,2 +1,2 @@
 # LinReg
-Library for linear regression with visualisator
+Library for linear regression with testing visualisator
